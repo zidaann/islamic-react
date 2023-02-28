@@ -47,12 +47,42 @@ body {
    min-height: 81.5vh;
 }
 
+/* .card {
+   height: 30vh !important;
+   border: 1px solid salmon !important;
+}
+
+.card:hover {
+   transition: transform 0.2s ease;
+} */
+
 .card {
    height: 30vh !important;
+   background: #fff;
+   border-top-right-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+   transition: all 0.3s ease-out;
+   text-decoration: none;
+}
+
+.card:hover {
+   transform: translateY(-5px) scale(1.005) translateZ(0);
+   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+      0 24px 46px var(--box-shadow-color);
+   background-color: rgb(231, 231, 231);
+   -webkit-filter: invert(20%);
+   filter: invert(20%);
 }
 
 .card h5 {
-   color: #5e5e5e;
+   /* color: #5e5e5e; */
+   color: #585858;
 }
 
 .card-body {
